@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightServer", "LightServer.csproj", "{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerLibrary", "..\ServerLibrary\ServerLibrary.csproj", "{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6559F11-97E7-4012-A46A-DF936901009F}
+	EndGlobalSection
+EndGlobal

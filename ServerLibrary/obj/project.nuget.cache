@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "dgSpecHash": "cl4oBKZXPhw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\ServerLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\litenetlib\\1.3.1\\litenetlib.1.3.1.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\YaroSlave\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-2xjx-v99w-gqf3 (уровень серьезности: высокий уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-3gp9-h8hw-pxpw (уровень серьезности: средний уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-3w5p-jhp5-c29q (уровень серьезности: высокий уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-5633-f33j-c6f7 (уровень серьезности: средний уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-6px8-22w5-w334 (уровень серьезности: высокий уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-g5vf-38cp-4px9 (уровень серьезности: высокий уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-vgwq-hfqc-58wv (уровень серьезности: средний уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.NETCore.App\" 2.1.0 есть известная уязвимость https://github.com/advisories/GHSA-x5qj-9vmx-7g6g (уровень серьезности: средний уровень)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
+}

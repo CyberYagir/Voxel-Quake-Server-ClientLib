@@ -1,0 +1,12 @@
+C:\Users\YaroSlave\source\repos\ServerLibrary\bin\Debug\net8.0\ServerLibrary.deps.json
+C:\Users\YaroSlave\source\repos\ServerLibrary\bin\Debug\net8.0\ServerLibrary.dll
+C:\Users\YaroSlave\source\repos\ServerLibrary\bin\Debug\net8.0\ServerLibrary.pdb
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.csproj.AssemblyReference.cache
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.AssemblyInfoInputs.cache
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.AssemblyInfo.cs
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.dll
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\refint\ServerLibrary.dll
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ServerLibrary.pdb
+C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\net8.0\ref\ServerLibrary.dll
