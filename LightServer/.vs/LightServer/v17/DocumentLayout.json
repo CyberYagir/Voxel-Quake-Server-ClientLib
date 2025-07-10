@@ -3,14 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|c:\\users\\yaroslave\\source\\repos\\server\\lightserver\\base\\playersmodule\\serverplayersmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|solutionrelative:base\\playersmodule\\serverplayersmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\eprojectiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\erpcname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\eprojectiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|c:\\users\\yaroslave\\source\\repos\\server\\lightserver\\base\\playersmodule\\serverplayersmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|solutionrelative:base\\playersmodule\\serverplayersmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|c:\\users\\yaroslave\\source\\repos\\server\\lightserver\\base\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,36 +58,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ERPCName.cs",
+              "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\ERPCName.cs",
+              "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\ERPCName.cs",
+              "ToolTip": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\ERPCName.cs",
+              "RelativeToolTip": "..\\ServerLibrary\\Structs\\ERPCName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:06:46.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Packet.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\Packet.cs",
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\Packet.cs",
               "ToolTip": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\Packet.cs",
               "RelativeToolTip": "..\\ServerLibrary\\Structs\\Packet.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T20:44:32.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EProjectileType.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\EProjectileType.cs",
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\EProjectileType.cs",
               "ToolTip": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\EProjectileType.cs",
               "RelativeToolTip": "..\\ServerLibrary\\Structs\\EProjectileType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T16:18:36.277Z"
+              "WhenOpened": "2025-07-09T16:18:36.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\Server.cs",
               "RelativeDocumentMoniker": "Base\\Server.cs",
@@ -96,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LogUtils.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Utils\\LogUtils.cs",
               "RelativeDocumentMoniker": "Utils\\LogUtils.cs",
@@ -108,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PerfomanceHandler.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PerfomanceHandler.cs",
               "RelativeDocumentMoniker": "Base\\PerfomanceHandler.cs",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EProjectileType.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\Structs\\EProjectileType.cs",
               "RelativeDocumentMoniker": "..\\..\\ServerLibrary\\Structs\\EProjectileType.cs",
@@ -132,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ServerTimerModule.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PlayersModule\\ServerTimerModule.cs",
               "RelativeDocumentMoniker": "Base\\PlayersModule\\ServerTimerModule.cs",
@@ -144,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ERPCName.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\Structs\\ERPCName.cs",
               "RelativeDocumentMoniker": "..\\..\\ServerLibrary\\Structs\\ERPCName.cs",
@@ -156,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ServerPlayersModule.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PlayersModule\\ServerPlayersModule.cs",
               "RelativeDocumentMoniker": "Base\\PlayersModule\\ServerPlayersModule.cs",
@@ -169,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ECMDName.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\Structs\\ECMDName.cs",
               "RelativeDocumentMoniker": "..\\..\\ServerLibrary\\Structs\\ECMDName.cs",
@@ -181,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EGameState.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\Structs\\EGameState.cs",
               "RelativeDocumentMoniker": "..\\..\\ServerLibrary\\Structs\\EGameState.cs",
@@ -193,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Packet.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\Structs\\Packet.cs",
               "RelativeDocumentMoniker": "..\\..\\ServerLibrary\\Structs\\Packet.cs",
@@ -205,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ServerBlocksModule.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PlayersModule\\ServerBlocksModule.cs",
               "RelativeDocumentMoniker": "Base\\PlayersModule\\ServerBlocksModule.cs",
