@@ -101,6 +101,7 @@ namespace LightServer.Base.PlayersModule
 
             if (players.ContainsKey(id))
             {
+                Console.WriteLine(projectileType.ToString());
                 var projectileID = Guid.NewGuid().ToString();
                 spawnedProjectiles.Add(projectileID);
                 CommandToAllClients(delegate (int clientID)

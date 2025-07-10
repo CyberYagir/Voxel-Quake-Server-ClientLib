@@ -8,3 +8,14 @@ C:\Users\YaroSlave\source\repos\ServerLibrary\bin\Debug\netcoreapp2.1\ServerLibr
 C:\Users\YaroSlave\source\repos\ServerLibrary\bin\Debug\netcoreapp2.1\ServerLibrary.pdb
 C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.dll
 C:\Users\YaroSlave\source\repos\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.pdb
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\bin\Debug\netcoreapp2.1\ServerLibrary.deps.json
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\bin\Debug\netcoreapp2.1\ServerLibrary.dll
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\bin\Debug\netcoreapp2.1\ServerLibrary.pdb
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.csproj.AssemblyReference.cache
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.AssemblyInfoInputs.cache
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.AssemblyInfo.cs
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.sourcelink.json
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.dll
+C:\Users\YaroSlave\source\repos\Server\ServerLibrary\obj\Debug\netcoreapp2.1\ServerLibrary.pdb

@@ -2,6 +2,7 @@
 {
     public enum EProjectileType
     {
-        Rocket
+        Rocket,
+        Rail
     }
 }

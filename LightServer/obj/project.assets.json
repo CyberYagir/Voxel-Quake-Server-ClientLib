@@ -119,11 +119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YaroSlave\\source\\repos\\LightServer\\LightServer.csproj",
+      "projectUniqueName": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\LightServer.csproj",
       "projectName": "LightServer",
-      "projectPath": "C:\\Users\\YaroSlave\\source\\repos\\LightServer\\LightServer.csproj",
+      "projectPath": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\LightServer.csproj",
       "packagesPath": "C:\\Users\\YaroSlave\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YaroSlave\\source\\repos\\LightServer\\obj\\",
+      "outputPath": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -144,8 +144,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\ServerLibrary.csproj": {
-              "projectPath": "C:\\Users\\YaroSlave\\source\\repos\\ServerLibrary\\ServerLibrary.csproj"
+            "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\ServerLibrary.csproj": {
+              "projectPath": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\ServerLibrary.csproj"
             }
           }
         }
