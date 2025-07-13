@@ -12,6 +12,12 @@
       "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\serverplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\erpcname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|c:\\users\\yaroslave\\source\\repos\\server\\lightserver\\base\\playersmodule\\serverweaponsspotsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|solutionrelative:base\\playersmodule\\serverweaponsspotsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -20,13 +26,7 @@
       "RelativeMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|solutionrelative:base\\playersmodule\\serverplayersmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\ecmdname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC539141-5F7F-43FA-9DAD-08D99ABDC13E}|..\\ServerLibrary\\ServerLibrary.csproj|c:\\users\\yaroslave\\source\\repos\\server\\serverlibrary\\structs\\erpcname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEC3B78A-804B-4D1A-A7B9-ACFBED041DFC}|LightServer.csproj|c:\\users\\yaroslave\\source\\repos\\server\\lightserver\\base\\playersmodule\\servertimermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\EProjectileType.cs",
               "ToolTip": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\EProjectileType.cs",
               "RelativeToolTip": "..\\ServerLibrary\\Structs\\EProjectileType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T09:30:09.634Z",
               "EditorCaption": ""
@@ -83,19 +83,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Packet.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\Packet.cs",
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\Packet.cs",
               "ToolTip": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\Packet.cs",
               "RelativeToolTip": "..\\ServerLibrary\\Structs\\Packet.cs",
-              "ViewState": "AgIAAFABAAAAAAAAAAAkwGUBAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACsBAAAAAAAAAAAYwGUBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T14:38:25.645Z"
+              "WhenOpened": "2025-07-12T14:38:25.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ECMDName.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\ECMDName.cs",
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\ECMDName.cs",
@@ -107,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "ERPCName.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\ServerLibrary\\Structs\\ERPCName.cs",
               "RelativeDocumentMoniker": "..\\ServerLibrary\\Structs\\ERPCName.cs",
@@ -115,11 +116,12 @@
               "RelativeToolTip": "..\\ServerLibrary\\Structs\\ERPCName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T14:37:55.22Z"
+              "WhenOpened": "2025-07-12T14:37:55.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ServerWeaponsSpotsModule.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PlayersModule\\ServerWeaponsSpotsModule.cs",
               "RelativeDocumentMoniker": "Base\\PlayersModule\\ServerWeaponsSpotsModule.cs",
@@ -127,12 +129,11 @@
               "RelativeToolTip": "Base\\PlayersModule\\ServerWeaponsSpotsModule.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAcwE8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T14:30:33.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T14:30:33.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ServerPlayersModule.cs",
               "DocumentMoniker": "C:\\Users\\YaroSlave\\source\\repos\\Server\\LightServer\\Base\\PlayersModule\\ServerPlayersModule.cs",
               "RelativeDocumentMoniker": "Base\\PlayersModule\\ServerPlayersModule.cs",

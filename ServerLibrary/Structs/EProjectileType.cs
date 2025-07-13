@@ -5,6 +5,7 @@
         Rocket,
         Rail,
         Gauntlet,
-        Machinegun
+        Machinegun,
+        Shotgun
     }
 }
