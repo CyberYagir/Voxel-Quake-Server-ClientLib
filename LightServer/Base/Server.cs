@@ -136,10 +136,12 @@ namespace LightServer.Base
             var timerModule = AddModule<ServerTimerModule>(new ServerTimerModule());
             var playersModule = AddModule<ServerPlayersModule>(new ServerPlayersModule());
             var blocksModule = AddModule<ServerBlocksModule>(new ServerBlocksModule());
+            var weaponsSpotsModule = AddModule<ServerWeaponsSpotsModule>(new ServerWeaponsSpotsModule());
 
             timerModule.Init();
             playersModule.Init();
             blocksModule.Init();
+            weaponsSpotsModule.Init();
 
             gameStateModule.ChangeGameState(EGameState.Warmup);
         }

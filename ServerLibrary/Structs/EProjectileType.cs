@@ -4,6 +4,7 @@
     {
         Rocket,
         Rail,
-        Gauntlet
+        Gauntlet,
+        Machinegun
     }
 }

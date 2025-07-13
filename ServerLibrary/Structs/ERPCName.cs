@@ -9,6 +9,7 @@
         UpdatePlayerTransform,
         SpawnProjectile,
         RemoveBlocks,
-        DestroyProjectile
+        DestroyProjectile,
+        PickupWeapon
     }
 }

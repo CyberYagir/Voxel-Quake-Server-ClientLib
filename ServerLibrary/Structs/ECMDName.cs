@@ -15,6 +15,7 @@ namespace ServerLibrary.Structs
         DestroyPlayer,
         SpawnProjectile,
         GetChangedBlocks,
-        DestroyProjectile
+        DestroyProjectile,
+        PickupWeapon
     }
 }

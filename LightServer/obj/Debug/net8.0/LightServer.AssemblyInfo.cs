@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LightServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96a6cf69d4fd4c6d3f50681f91c116e04605417d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02d8e7a1b843a0fb4b23fd139c45c54e51516a36")]
 [assembly: System.Reflection.AssemblyProductAttribute("LightServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LightServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

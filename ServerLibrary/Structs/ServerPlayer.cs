@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LightServer.Base.PlayersModule
 {
@@ -21,7 +22,9 @@ namespace LightServer.Base.PlayersModule
             this.z = z;
         }
     }
-    public struct NetVector3Int
+
+    [Serializable]
+    public struct NetVector3Int : IEquatable<NetVector3Int>
     {
         public int x;
         public int y;
@@ -33,6 +36,33 @@ namespace LightServer.Base.PlayersModule
             this.y = y;
             this.z = z;
         }
+
+        public bool Equals(NetVector3Int other)
+        {
+            return x == other.x && y == other.y && z == other.z;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is NetVector3Int other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            // Хорошее распределение хеша для 3D координат
+            unchecked
+            {
+                int hash = x;
+                hash = (hash * 397) ^ y;
+                hash = (hash * 397) ^ z;
+                return hash;
+            }
+        }
+
+        public static bool operator ==(NetVector3Int a, NetVector3Int b) => a.Equals(b);
+        public static bool operator !=(NetVector3Int a, NetVector3Int b) => !a.Equals(b);
+
+        public override string ToString() => $"({x}, {y}, {z})";
     }
 
     public struct NetBlockData

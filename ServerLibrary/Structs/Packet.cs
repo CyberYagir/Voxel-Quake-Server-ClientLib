@@ -139,6 +139,19 @@ namespace ServerLibrary.Structs
             OnSendRPC?.Invoke(ERPCName.DestroyProjectile, peer.RemoteId);
         }
 
+        public static void RPCPickupWeapon(this NetPeer peer, int mapItemID, string weaponName)
+        {
+            var writer = GetWriter();
+            writer.Put((byte)ERPCName.PickupWeapon);
+            writer.Put(peer.RemoteId);
+            writer.Put(mapItemID);
+            writer.Put(weaponName);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendRPC?.Invoke(ERPCName.PickupWeapon, peer.RemoteId);
+        }
+
         public static void WriteChunksData(Dictionary<NetVector3Int, NetChunkData> netChunksData, NetDataWriter writer)
         {
             writer.Put(netChunksData.Count);
@@ -336,6 +349,18 @@ namespace ServerLibrary.Structs
             OnSendCMD?.Invoke(ECMDName.DestroyProjectile, peer.Id);
         }
 
+        public static void CMDSendHandlePickUpWeapon(this NetPeer peer, int mapItemID, string serverTime)
+        {
+            var writer = GetWriter();
+            writer.Put((byte)ECMDName.PickupWeapon); 
+            writer.Put(peer.Id);
+            writer.Put(mapItemID);
+            writer.Put(serverTime);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendCMD?.Invoke(ECMDName.PickupWeapon, peer.Id);
+        }
 
         #endregion
 
