@@ -137,11 +137,13 @@ namespace LightServer.Base
             var playersModule = AddModule<ServerPlayersModule>(new ServerPlayersModule());
             var blocksModule = AddModule<ServerBlocksModule>(new ServerBlocksModule());
             var weaponsSpotsModule = AddModule<ServerWeaponsSpotsModule>(new ServerWeaponsSpotsModule());
+            var chatModule =  AddModule<ServerChatModule>(new ServerChatModule());
 
             timerModule.Init();
             playersModule.Init();
             blocksModule.Init();
             weaponsSpotsModule.Init();
+            chatModule.Init();
 
             gameStateModule.ChangeGameState(EGameState.Warmup);
         }

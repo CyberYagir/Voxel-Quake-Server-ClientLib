@@ -158,6 +158,8 @@ namespace LightServer.Base.PlayersModule
                                 server.GetPeerByID(id).CMDSendUpdatePlayerTransform(player.Value, DeliveryMethod.ReliableOrdered);
                             }
                         }
+
+                        OnPlayersUpdate();
                     }
                 }
             }
@@ -197,9 +199,6 @@ namespace LightServer.Base.PlayersModule
                 server.GetPeerByID(id).CMDSendGameState(gameStateModule.GameState);
                 server.GetPeerByID(id).CMDSendTimer(timerModule.Time);
                 server.GetPeerByID(id).CMDSendChangedBlocks(blocksModule.ChunksData);
-
-
-                OnPlayersUpdate();
             }
             
         }
@@ -252,6 +251,7 @@ namespace LightServer.Base.PlayersModule
 
             UpdateTimersAll(timerModule.Time);
             UpdateGameStateAll(gameStateModule.GameState);
+            LogUtils.Log("ON PLAYERS UPDATE");
         }
 
         public void CommandToAllClients(Action<int> action)

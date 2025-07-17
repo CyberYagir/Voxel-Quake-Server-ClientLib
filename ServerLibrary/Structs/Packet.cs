@@ -42,6 +42,19 @@ namespace ServerLibrary.Structs
             OnSendRPC?.Invoke(ERPCName.InitPlayer, peer.RemoteId);
         }
 
+        public static void RPCSendChatMessage(this NetPeer peer, string data)
+        {
+            var writer = GetWriter();
+
+            writer.Put((byte)ERPCName.SendChatMessage);
+            writer.Put(peer.RemoteId);
+            writer.Put(data);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendRPC?.Invoke(ERPCName.SendChatMessage, peer.RemoteId);
+        }
+
 
         public static void RPCSpawnPlayer(this NetPeer peer, NetVector3 position, NetVector3 rotation)
         {
@@ -360,6 +373,21 @@ namespace ServerLibrary.Structs
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
 
             OnSendCMD?.Invoke(ECMDName.PickupWeapon, peer.Id);
+        }
+
+
+        public static void CMDSendChatMessage(this NetPeer peer, string data, int senderID)
+        {
+            var writer = GetWriter();
+
+            writer.Put((byte)ECMDName.SendChatMessage);
+            writer.Put(peer.RemoteId);
+            writer.Put(senderID);
+            writer.Put(data);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendCMD?.Invoke(ECMDName.SendChatMessage, peer.RemoteId);
         }
 
         #endregion

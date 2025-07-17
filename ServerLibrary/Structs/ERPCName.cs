@@ -10,6 +10,7 @@
         SpawnProjectile,
         RemoveBlocks,
         DestroyProjectile,
-        PickupWeapon
+        PickupWeapon,
+        SendChatMessage
     }
 }

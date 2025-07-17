@@ -40,22 +40,6 @@ namespace LightServer.Base.PlayersModule
         ServerPlayersModule playersModule;
         public void Init()
         {
-            //blocksModule = server.GetModule<ServerBlocksModule>();
-            //timerModule = server.GetModule<ServerTimerModule>();
-            //timerModule.OnTimerUpdate += (time) =>
-            //{
-            //    UpdateTimersAll(time);
-            //};
-
-
-            //gameStateModule = server.GetModule<ServerGameStateModule>();
-            //gameStateModule.OnGameStateChanged += UpdateGameStateAll;
-
-
-            //server.Listener.PeerConnectedEvent += Listener_PeerConnectedEvent;
-
-            //server.Listener.PeerDisconnectedEvent += Listener_PeerDisconnectedEvent;
-
             playersModule = server.GetModule<ServerPlayersModule>();
 
             server.OnRPCRecieved += Server_OnRPCRecieved;
