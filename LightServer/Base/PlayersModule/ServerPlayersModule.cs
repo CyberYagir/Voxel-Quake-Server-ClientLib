@@ -7,9 +7,14 @@ namespace LightServer.Base.PlayersModule
 
     public class ServerPlayersModule : ServerModuleBase
     {
-        List<string> spawnedProjectiles = new List<string>();
+        private List<string> spawnedProjectiles = new List<string>();
 
-        Dictionary<int, ServerPlayer> players = new Dictionary<int, ServerPlayer>();
+        private Dictionary<int, ServerPlayer> players = new Dictionary<int, ServerPlayer>();
+
+
+        public event Action<ServerPlayer> OnServerPlayerConnected;
+        public event Action<ServerPlayer> OnServerPlayerDisconnected;
+
         ServerGameStateModule gameStateModule;
         ServerTimerModule timerModule;
         ServerBlocksModule blocksModule;
@@ -58,9 +63,36 @@ namespace LightServer.Base.PlayersModule
                 case ERPCName.DestroyProjectile:
                     HandleRPCDestroyProjectile(reader, id);
                     break;
+                case ERPCName.ChangeWeapon:
+                    HandleRPCChangeWeapon(reader, id);
+                    break;
+
                 default:
                     break;
             }
+        }
+
+        private void HandleRPCChangeWeapon(NetPacketReader reader, int id)
+        {
+            var weapon = (EWeaponType)reader.GetByte();
+
+            if (players.ContainsKey(id))
+            {
+                players[id].ChangeWeapon(weapon);
+
+                ChangeWeaponForAll(weapon, id);
+            }
+        }
+
+        private void ChangeWeaponForAll(EWeaponType weapon, int id)
+        {
+            CommandToAllClients(delegate (int clientID)
+            {
+                if (id != clientID)
+                {
+                    server.GetPeerByID(clientID).CMDChangeWeapon(weapon, id);
+                }
+            });
         }
 
         private void HandleRPCDestroyProjectile(NetPacketReader reader, int id)
@@ -98,6 +130,7 @@ namespace LightServer.Base.PlayersModule
             NetVector3 pos = PacketsManager.ReadVector(reader);
             NetVector3 forward = PacketsManager.ReadVector(reader);
             NetVector3 spawnPoint = PacketsManager.ReadVector(reader);
+            NetVector3 endPoint = PacketsManager.ReadVector(reader);
 
             if (players.ContainsKey(id))
             {
@@ -106,7 +139,7 @@ namespace LightServer.Base.PlayersModule
                 spawnedProjectiles.Add(projectileID);
                 CommandToAllClients(delegate (int clientID)
                 {
-                    server.GetPeerByID(clientID).CMDSendSpawnProjetile(players[id], projectileType, pos, forward, spawnPoint, projectileID);
+                    server.GetPeerByID(clientID).CMDSendSpawnProjetile(players[id], projectileType, pos, forward, spawnPoint, projectileID, endPoint);
                 });
             }
         }
@@ -155,6 +188,7 @@ namespace LightServer.Base.PlayersModule
                             if (player.Value.IsSpawned && player.Value.IsInited)
                             {
                                 server.GetPeerByID(id).CMDSendRespawnPlayer(player.Value);
+                                server.GetPeerByID(id).CMDChangeWeapon(player.Value.SelectedWeapon, player.Value.Id);
                                 server.GetPeerByID(id).CMDSendUpdatePlayerTransform(player.Value, DeliveryMethod.ReliableOrdered);
                             }
                         }
@@ -183,6 +217,9 @@ namespace LightServer.Base.PlayersModule
                     {
                         server.GetPeerByID(clientID).CMDSendRespawnPlayer(players[id]);
                     });
+
+
+                    ChangeWeaponForAll(players[id].SelectedWeapon, id);
                 }
             }
         }
@@ -190,15 +227,18 @@ namespace LightServer.Base.PlayersModule
         private void HandleRPCInitPlayer(NetPacketReader reader, int id)
         {
             var nickName = reader.GetString();
+            var color = PacketsManager.ReadVector(reader);
 
             if (players.ContainsKey(id))
             {
-                players[id].Init(id, nickName);
+                players[id].Init(id, nickName, color);
 
                 server.GetPeerByID(id).CMDSendMap(server.Config.MapName);
                 server.GetPeerByID(id).CMDSendGameState(gameStateModule.GameState);
                 server.GetPeerByID(id).CMDSendTimer(timerModule.Time);
                 server.GetPeerByID(id).CMDSendChangedBlocks(blocksModule.ChunksData);
+
+                OnServerPlayerConnected?.Invoke(players[id]);
             }
             
         }
@@ -214,6 +254,9 @@ namespace LightServer.Base.PlayersModule
                 {
                     server.GetPeerByID(clientID).CMDSendDestroyPlayer(player);
                 });
+
+
+                OnServerPlayerDisconnected?.Invoke(player);
             }
             if (players.Count > 0)
             {
@@ -251,7 +294,6 @@ namespace LightServer.Base.PlayersModule
 
             UpdateTimersAll(timerModule.Time);
             UpdateGameStateAll(gameStateModule.GameState);
-            LogUtils.Log("ON PLAYERS UPDATE");
         }
 
         public void CommandToAllClients(Action<int> action)

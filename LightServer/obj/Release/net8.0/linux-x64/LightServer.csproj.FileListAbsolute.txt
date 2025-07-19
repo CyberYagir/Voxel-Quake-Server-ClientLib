@@ -198,3 +198,6 @@ C:\Users\YaroSlave\source\repos\LightServer\obj\Release\net8.0\linux-x64\refint\
 C:\Users\YaroSlave\source\repos\LightServer\obj\Release\net8.0\linux-x64\LightServer.pdb
 C:\Users\YaroSlave\source\repos\LightServer\obj\Release\net8.0\linux-x64\LightServer.genruntimeconfig.cache
 C:\Users\YaroSlave\source\repos\LightServer\obj\Release\net8.0\linux-x64\ref\LightServer.dll
+C:\Users\YaroSlave\source\repos\Server\LightServer\obj\Release\net8.0\linux-x64\LightServer.dll
+C:\Users\YaroSlave\source\repos\Server\LightServer\obj\Release\net8.0\linux-x64\refint\LightServer.dll
+C:\Users\YaroSlave\source\repos\Server\LightServer\obj\Release\net8.0\linux-x64\LightServer.pdb

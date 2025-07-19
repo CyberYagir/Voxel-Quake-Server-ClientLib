@@ -29,13 +29,14 @@ namespace ServerLibrary.Structs
         }
 
         #region RPC
-        public static void RPCInitPlayer(this NetPeer peer, string nickname)
+        public static void RPCInitPlayer(this NetPeer peer, string nickname, NetVector3 playerColor)
         {
             var writer = GetWriter();
 
             writer.Put((byte)ERPCName.InitPlayer);
             writer.Put(peer.RemoteId);
             writer.Put(nickname);
+            WriteVector(writer, playerColor);
 
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
 
@@ -93,7 +94,7 @@ namespace ServerLibrary.Structs
             OnSendRPC?.Invoke(ERPCName.GetPlayersList, peer.RemoteId);
         }
 
-        public static void RPCSpawnProjectile(this NetPeer peer, EProjectileType projectileID, NetVector3 camPos, NetVector3 camForward, NetVector3 spawnPoint)
+        public static void RPCSpawnProjectile(this NetPeer peer, EProjectileType projectileID, NetVector3 camPos, NetVector3 camForward, NetVector3 spawnPoint, NetVector3 endPoint)
         {
             var writer = GetWriter();
             writer.Put((byte)ERPCName.SpawnProjectile);
@@ -104,6 +105,7 @@ namespace ServerLibrary.Structs
             WriteVector(writer, camPos);
             WriteVector(writer, camForward);
             WriteVector(writer, spawnPoint);
+            WriteVector(writer, endPoint);
 
 
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
@@ -150,6 +152,18 @@ namespace ServerLibrary.Structs
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
 
             OnSendRPC?.Invoke(ERPCName.DestroyProjectile, peer.RemoteId);
+        }
+
+        public static void RPCChangeWeapon(this NetPeer peer, EWeaponType eWeapon)
+        {
+            var writer = GetWriter();
+            writer.Put((byte)ERPCName.ChangeWeapon);
+            writer.Put(peer.RemoteId);
+            writer.Put((byte)eWeapon);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendRPC?.Invoke(ERPCName.ChangeWeapon, peer.RemoteId);
         }
 
         public static void RPCPickupWeapon(this NetPeer peer, int mapItemID, string weaponName)
@@ -218,7 +232,7 @@ namespace ServerLibrary.Structs
         #region CMD
 
         //CMDSendSpawnProjetile
-        public static void CMDSendSpawnProjetile(this NetPeer peer, ServerPlayer owner, EProjectileType projectileType, NetVector3 camPos, NetVector3 camForward, NetVector3 spawnPoint, string projectileUID)
+        public static void CMDSendSpawnProjetile(this NetPeer peer, ServerPlayer owner, EProjectileType projectileType, NetVector3 camPos, NetVector3 camForward, NetVector3 spawnPoint, string projectileUID, NetVector3 endPoint)
         {
             var writer = GetWriter();
             writer.Put((byte)ECMDName.SpawnProjectile);
@@ -231,11 +245,25 @@ namespace ServerLibrary.Structs
             WriteVector(writer, camPos);
             WriteVector(writer, camForward);
             WriteVector(writer, spawnPoint);
+            WriteVector(writer, endPoint);
 
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
 
 
             OnSendCMD?.Invoke(ECMDName.SpawnProjectile, peer.Id);
+        }
+
+        public static void CMDChangeWeapon(this NetPeer peer, EWeaponType eWeapon, int clientID)
+        {
+            var writer = GetWriter();
+            writer.Put((byte)ECMDName.ChangeWeapon);
+            writer.Put(peer.RemoteId);
+            writer.Put((byte)eWeapon);
+            writer.Put(clientID);
+
+            peer.Send(writer, DeliveryMethod.ReliableOrdered);
+
+            OnSendCMD?.Invoke(ECMDName.ChangeWeapon, peer.RemoteId);
         }
         public static void CMDSendPlayerList(this NetPeer peer, Dictionary<int, ServerPlayer> players)
         {
@@ -248,6 +276,7 @@ namespace ServerLibrary.Structs
                 writer.Put(item.Key);
                 writer.Put(item.Value.Nickname);
                 writer.Put(item.Value.IsInited);
+                WriteVector(writer, item.Value.SkinColor);
             }
             peer.Send(writer, DeliveryMethod.ReliableOrdered);
 

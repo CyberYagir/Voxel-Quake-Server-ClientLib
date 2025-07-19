@@ -9,6 +9,15 @@ namespace LightServer.Base.PlayersModule
         InGame
     }
 
+    public enum EWeaponType
+    {
+        Drill,
+        Machinegun,
+        Rocket,
+        Rail,
+        Shotgun
+    }
+
     public struct NetVector3
     {
         public float x;
@@ -89,13 +98,15 @@ namespace LightServer.Base.PlayersModule
     public class ServerPlayer
     {
         public int Id { get; private set; }
+        public EWeaponType SelectedWeapon { get; private set; }
         public EClientState State { get; private set; } = EClientState.Connecting;
         public NetVector3 Position { get; private set; }
         public NetVector3 Rotation { get; private set; }
         public NetVector3 Velocity { get; private set; }
+        public NetVector3 SkinColor { get; private set; }
+
         public float CameraX { get; private set; }
 
-        public int Weapon { get; private set; }
         public float Health { get; private set; }
         public float Armor { get; private set; }
         public string Nickname { get; private set; }
@@ -108,16 +119,23 @@ namespace LightServer.Base.PlayersModule
             State = state;
         }
 
-        public void Init(int id, string nickName)
+        public void Init(int id, string nickName, NetVector3 netColor)
         {
             Nickname = nickName;
             Id = id;
+            SkinColor = netColor;
             IsInited = true;
         }
 
         public void SpawnPlayer()
         {
+            ChangeWeapon(EWeaponType.Machinegun);
             IsSpawned = true;
+        }
+
+        public void ChangeWeapon(EWeaponType t)
+        {
+            SelectedWeapon = t;
         }
 
         public void UpdateCameraX(float cameraX)

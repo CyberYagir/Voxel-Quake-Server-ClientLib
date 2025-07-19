@@ -17,6 +17,7 @@ namespace ServerLibrary.Structs
         GetChangedBlocks,
         DestroyProjectile,
         PickupWeapon,
-        SendChatMessage
+        SendChatMessage,
+        ChangeWeapon
     }
 }

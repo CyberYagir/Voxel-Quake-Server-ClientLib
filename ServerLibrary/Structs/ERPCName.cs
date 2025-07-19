@@ -11,6 +11,7 @@
         RemoveBlocks,
         DestroyProjectile,
         PickupWeapon,
-        SendChatMessage
+        SendChatMessage,
+        ChangeWeapon
     }
 }
